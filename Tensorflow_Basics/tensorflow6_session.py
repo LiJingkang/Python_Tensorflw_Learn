@@ -5,10 +5,13 @@ Please note, this code is only for python 3+. If you are using python 2+, please
 """
 import tensorflow as tf
 
+# 定义一个矩阵，不变量矩阵是一个1行，两列的矩阵
 matrix1 = tf.constant([[3, 3]])
 matrix2 = tf.constant([[2],
                        [2]])
-product = tf.matmul(matrix1, matrix2)  # matrix multiply np.dot(m1, m2)
+
+
+product = tf.matmul(matrix1, matrix2) # matrix multiply np.dot(m1, m2)
 
 # method 1
 sess = tf.Session()
